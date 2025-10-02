@@ -55,7 +55,13 @@ export default {
       backgroundImage: {
         'gradient-hero': 'linear-gradient(135deg, hsl(var(--gradient-primary)) 0%, hsl(var(--gradient-accent)) 100%)',
         'gradient-accent': 'linear-gradient(135deg, hsl(var(--gradient-secondary)) 0%, hsl(var(--gradient-accent)) 100%)',
-        'gradient-dark': 'linear-gradient(180deg, hsl(var(--gradient-light)) 0%, hsl(var(--background)) 100%)',
+        'gradient-light': 'linear-gradient(180deg, hsl(var(--gradient-light)) 0%, hsl(var(--background)) 100%)',
+        'gradient-radial': 'radial-gradient(circle at center, hsl(var(--primary) / 0.05) 0%, transparent 70%)',
+      },
+      boxShadow: {
+        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+        'medium': '0 4px 20px -2px rgba(0, 0, 0, 0.08), 0 12px 25px -5px rgba(0, 0, 0, 0.06)',
+        'large': '0 10px 40px -5px rgba(0, 0, 0, 0.1), 0 20px 50px -10px rgba(0, 0, 0, 0.08)',
       },
       borderRadius: {
         lg: "var(--radius)",

@@ -39,10 +39,10 @@ const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={index}
-              className="p-8 bg-card border-border hover:border-primary/50 transition-all duration-300 group animate-fade-in"
+              className="p-8 bg-card border-border hover:border-primary/40 hover:shadow-medium transition-all duration-300 group animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-xl bg-gradient-hero flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 rounded-xl bg-gradient-hero flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-soft">
                 <service.icon className="w-8 h-8 text-white" />
               </div>
               
@@ -52,10 +52,10 @@ const Services = () => {
                 {service.description}
               </p>
 
-              <div className="space-y-2">
+              <div className="space-y-2.5">
                 {service.features.map((feature, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-primary"></div>
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <div className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></div>
                     <span className="text-sm text-muted-foreground">{feature}</span>
                   </div>
                 ))}

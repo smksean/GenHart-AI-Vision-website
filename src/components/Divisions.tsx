@@ -33,7 +33,7 @@ const Divisions = () => {
   ];
 
   return (
-    <section id="divisions" className="py-24 bg-gradient-dark">
+    <section id="divisions" className="py-24 bg-gradient-light">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-6 mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
@@ -46,14 +46,14 @@ const Divisions = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
           {/* GenHart HQ */}
-          <Card className="p-8 bg-card border-border hover:border-primary/50 transition-all duration-500 group animate-fade-in">
-            <div className="relative h-64 mb-8 rounded-xl overflow-hidden">
+          <Card className="p-8 bg-card border-border hover:border-primary/40 hover:shadow-large transition-all duration-500 group animate-fade-in">
+            <div className="relative h-64 mb-8 rounded-xl overflow-hidden shadow-soft">
               <img 
                 src={productImage} 
                 alt="AI Product Innovation" 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent"></div>
             </div>
             
             <div className="flex items-center gap-3 mb-4">
@@ -93,14 +93,14 @@ const Divisions = () => {
           </Card>
 
           {/* GenHart EdTech */}
-          <Card className="p-8 bg-card border-border hover:border-accent/50 transition-all duration-500 group animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <div className="relative h-64 mb-8 rounded-xl overflow-hidden">
+          <Card className="p-8 bg-card border-border hover:border-accent/40 hover:shadow-large transition-all duration-500 group animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="relative h-64 mb-8 rounded-xl overflow-hidden shadow-soft">
               <img 
                 src={edtechImage} 
                 alt="GenHart EdTech" 
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent"></div>
             </div>
             
             <div className="flex items-center gap-3 mb-4">

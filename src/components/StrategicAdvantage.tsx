@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const StrategicAdvantage = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-gradient-light">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-6 mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
@@ -15,7 +15,7 @@ const StrategicAdvantage = () => {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <Card className="p-8 md:p-12 bg-card border-border relative overflow-hidden animate-fade-in">
+          <Card className="p-8 md:p-12 bg-card border-border shadow-medium relative overflow-hidden animate-fade-in">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
               <div className="absolute inset-0" style={{

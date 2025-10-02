@@ -19,7 +19,7 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-gradient-dark">
+    <section id="contact" className="py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -84,7 +84,7 @@ const Contact = () => {
 
             {/* Right Column - Newsletter & CTA */}
             <div className="space-y-8 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-              <Card className="p-8 bg-card border-border">
+              <Card className="p-8 bg-card border-border shadow-soft hover:shadow-medium transition-shadow duration-300">
                 <h3 className="font-display text-2xl font-bold mb-4">Stay Updated</h3>
                 <p className="text-muted-foreground mb-6">
                   Subscribe to our newsletter for the latest AI insights, product updates, and training opportunities.
@@ -104,12 +104,12 @@ const Contact = () => {
                 </form>
               </Card>
 
-              <Card className="p-8 bg-gradient-hero border-none text-center">
-                <h3 className="font-display text-2xl font-bold mb-4">Join Our Team</h3>
+              <Card className="p-8 bg-gradient-hero border-none text-center shadow-soft hover:shadow-medium transition-shadow duration-300">
+                <h3 className="font-display text-2xl font-bold mb-4 text-white">Join Our Team</h3>
                 <p className="text-white/90 mb-6">
                   We're always looking for talented individuals passionate about AI and innovation.
                 </p>
-                <Button variant="secondary" className="bg-white text-primary hover:bg-white/90">
+                <Button variant="secondary" className="bg-white text-primary hover:bg-white/95 shadow-soft">
                   View Open Positions
                 </Button>
               </Card>

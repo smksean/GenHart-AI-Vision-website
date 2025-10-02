@@ -21,7 +21,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24 relative">
+    <section id="about" className="py-24 relative bg-gradient-light">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6 mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
@@ -43,10 +43,10 @@ const About = () => {
           {features.map((feature, index) => (
             <Card 
               key={index}
-              className="p-8 bg-card border-border hover:border-primary/50 transition-all duration-300 hover:scale-105 animate-fade-in"
+              className="p-8 bg-card border-border hover:border-primary/40 hover:shadow-medium transition-all duration-300 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 rounded-xl bg-gradient-accent flex items-center justify-center mb-6 mx-auto">
+              <div className="w-16 h-16 rounded-xl bg-gradient-accent flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-soft">
                 <feature.icon className="w-8 h-8 text-white" />
               </div>
               <h3 className="font-display text-2xl font-bold mb-4 text-center">{feature.title}</h3>

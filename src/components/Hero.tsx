@@ -10,24 +10,16 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background"></div>
-      </div>
+      {/* Background with Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-radial"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background"></div>
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 text-center">
         <div className="max-w-5xl mx-auto space-y-8 animate-fade-in-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 animate-glow">
+          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/8 border border-primary/15 shadow-soft">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Leading AI Innovation in Africa</span>
+            <span className="text-sm font-medium text-foreground">Leading AI Innovation in Africa</span>
           </div>
 
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">
@@ -37,14 +29,14 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Building scalable products, consulting solutions, and training the next generation of AI talent.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
             <Button 
               size="lg" 
-              className="bg-gradient-hero text-lg px-8 py-6 group"
+              className="bg-gradient-hero text-lg px-8 py-6 shadow-medium hover:shadow-large transition-all duration-300 group"
               onClick={() => scrollToSection("divisions")}
             >
               Explore Our Solutions
@@ -53,7 +45,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10"
+              className="text-lg px-8 py-6 border-2 border-primary/30 hover:border-primary hover:bg-primary/5 transition-all duration-300"
               onClick={() => scrollToSection("about")}
             >
               Discover GenHart EdTech

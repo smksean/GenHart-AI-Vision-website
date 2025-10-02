@@ -17,7 +17,7 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24 bg-gradient-dark">
+    <section id="team" className="py-24">
       <div className="container mx-auto px-6">
         <div className="text-center space-y-6 mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
@@ -36,10 +36,10 @@ const Team = () => {
               {coreTeam.map((member, index) => (
                 <Card 
                   key={index}
-                  className="p-6 bg-card border-border hover:border-primary/50 transition-all duration-300 text-center group animate-fade-in"
+                  className="p-6 bg-card border-border hover:border-primary/40 hover:shadow-medium transition-all duration-300 text-center group animate-fade-in"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="w-24 h-24 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-24 h-24 rounded-full bg-gradient-hero flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-soft">
                     <User className="w-12 h-12 text-white" />
                   </div>
                   <h4 className="font-display text-lg font-bold mb-2">{member.name}</h4>
@@ -56,10 +56,10 @@ const Team = () => {
               {expansionTeam.map((member, index) => (
                 <Card 
                   key={index}
-                  className="p-6 bg-card border-border hover:border-accent/50 transition-all duration-300 text-center group animate-fade-in"
+                  className="p-6 bg-card border-border hover:border-accent/40 hover:shadow-medium transition-all duration-300 text-center group animate-fade-in"
                   style={{ animationDelay: `${(index + 4) * 0.1}s` }}
                 >
-                  <div className="w-24 h-24 rounded-full bg-gradient-accent flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <div className="w-24 h-24 rounded-full bg-gradient-accent flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform shadow-soft">
                     <User className="w-12 h-12 text-white" />
                   </div>
                   <h4 className="font-display text-lg font-bold mb-2">{member.name}</h4>
