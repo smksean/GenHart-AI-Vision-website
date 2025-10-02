@@ -53,9 +53,9 @@ export default {
         },
       },
       backgroundImage: {
-        'gradient-hero': 'linear-gradient(135deg, hsl(var(--gradient-purple)) 0%, hsl(var(--gradient-blue)) 50%, hsl(var(--gradient-emerald)) 100%)',
-        'gradient-accent': 'linear-gradient(135deg, hsl(var(--gradient-blue)) 0%, hsl(var(--gradient-emerald)) 100%)',
-        'gradient-dark': 'linear-gradient(180deg, hsl(var(--gradient-dark)) 0%, hsl(var(--background)) 100%)',
+        'gradient-hero': 'linear-gradient(135deg, hsl(var(--gradient-primary)) 0%, hsl(var(--gradient-accent)) 100%)',
+        'gradient-accent': 'linear-gradient(135deg, hsl(var(--gradient-secondary)) 0%, hsl(var(--gradient-accent)) 100%)',
+        'gradient-dark': 'linear-gradient(180deg, hsl(var(--gradient-light)) 0%, hsl(var(--background)) 100%)',
       },
       borderRadius: {
         lg: "var(--radius)",
