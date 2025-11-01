@@ -17,16 +17,16 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 85% 20%;
 
-    --primary: 220 85% 55%;
+    --primary: 198 100% 24%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 220 75% 45%;
+    --secondary: 198 100% 20%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 220 15% 96%;
     --muted-foreground: 220 20% 45%;
 
-    --accent: 215 90% 60%;
+    --accent: 198 100% 30%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 70% 50%;
@@ -39,9 +39,9 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Gradient stops */
-    --gradient-primary: 220 85% 55%;
-    --gradient-secondary: 220 75% 45%;
-    --gradient-accent: 215 90% 60%;
+    --gradient-primary: 198 100% 24%;
+    --gradient-secondary: 198 100% 20%;
+    --gradient-accent: 198 100% 35%;
     --gradient-light: 220 10% 98%;
     
     /* Shadows */
@@ -57,13 +57,19 @@ All colors MUST be HSL.
     @apply border-border;
   }
 
-  body {
-    @apply bg-background text-foreground font-sans antialiased;
+  html {
+    scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+  body {
+    @apply bg-background text-foreground font-sans antialiased leading-relaxed;
   }
+
+  h1 { @apply font-display font-bold tracking-tight; font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.15; }
+  h2 { @apply font-display font-semibold tracking-tight; font-size: clamp(1.75rem, 4.5vw, 2.5rem); line-height: 1.25; }
+  h3 { @apply font-display font-semibold tracking-tight; font-size: clamp(1.5rem, 3.5vw, 2rem); line-height: 1.35; }
+  h4, h5, h6 { @apply font-display font-semibold tracking-tight; }
+  p  { @apply text-muted-foreground leading-relaxed; }
 }
 
 @layer base {

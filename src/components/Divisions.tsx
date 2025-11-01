@@ -33,9 +33,9 @@ const Divisions = () => {
   ];
 
   return (
-    <section id="divisions" className="py-24 bg-gradient-light">
+    <section id="divisions" className="py-20 bg-gradient-light">
       <div className="container mx-auto px-6">
-        <div className="text-center space-y-6 mb-16 animate-fade-in">
+        <div className="text-center space-y-4 mb-14 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
             Our <span className="bg-gradient-hero bg-clip-text text-transparent">Divisions</span>
           </h2>

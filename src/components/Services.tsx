@@ -24,9 +24,9 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 relative">
+    <section id="services" className="py-20 relative">
       <div className="container mx-auto px-6">
-        <div className="text-center space-y-6 mb-16 animate-fade-in">
+        <div className="text-center space-y-4 mb-14 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
             Our <span className="bg-gradient-accent bg-clip-text text-transparent">Service Model</span>
           </h2>

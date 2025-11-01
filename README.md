@@ -1,73 +1,98 @@
-# Welcome to your Lovable project
+# GenHart AI Vision Website
 
-## Project info
+A modern, responsive website for GenHart - a global AI technology company focused on delivering scalable, data-driven solutions.
 
-**URL**: https://lovable.dev/projects/d82c4a92-3fe1-40df-9e8a-5aba48f05a0f
+## 🚀 Project Overview
 
-## How can I edit this code?
+GenHart operates through two core divisions:
+- **GenHart HQ**: Drives product innovation and consulting
+- **GenHart EdTech**: Dedicated to AI education and talent development
 
-There are several ways of editing your application.
+## 🛠 Technologies Used
 
-**Use Lovable**
+- **Vite** - Fast build tool and development server
+- **React 18** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - High-quality React components
+- **React Router** - Client-side routing
+- **Lucide React** - Icon library
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d82c4a92-3fe1-40df-9e8a-5aba48f05a0f) and start prompting.
+## 📦 Installation & Setup
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+### Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server (runs on http://localhost:8080)
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run linter
+npm run lint
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Project Structure
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+genhart-ai-vision/
+├── public/              # Static assets
+│   ├── media/          # Video and media files
+│   └── favicon.ico     # Site favicon
+├── src/
+│   ├── assets/         # Images and static resources
+│   ├── components/     # React components
+│   │   ├── ui/        # Reusable UI components (shadcn)
+│   │   ├── Hero.tsx   # Hero section
+│   │   ├── About.tsx  # About section
+│   │   └── ...        # Other page sections
+│   ├── pages/         # Route pages
+│   ├── lib/           # Utility functions
+│   ├── hooks/         # Custom React hooks
+│   └── index.css      # Global styles & Tailwind
+└── package.json
 
-**Use GitHub Codespaces**
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎨 Design Features
 
-## What technologies are used for this project?
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Responsive**: Fully responsive across all device sizes
+- **Accessibility**: Built with accessibility best practices
+- **Performance**: Optimized for fast load times
+- **SEO Ready**: Semantic HTML and meta tags
 
-This project is built with:
+## 🌐 Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+This project can be deployed to various platforms:
 
-## How can I deploy this project?
+- **Vercel**: `vercel deploy`
+- **Netlify**: Connect your Git repository
+- **GitHub Pages**: Use `npm run build` and deploy the `dist` folder
 
-Simply open [Lovable](https://lovable.dev/projects/d82c4a92-3fe1-40df-9e8a-5aba48f05a0f) and click on Share -> Publish.
+## 📝 License
 
-## Can I connect a custom domain to my Lovable project?
+Private - All rights reserved by GenHart
 
-Yes, you can!
+## 🤝 Contributing
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+This is a private project. For internal contributions, please follow the standard Git workflow:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+1. Create a feature branch
+2. Make your changes
+3. Submit a pull request for review
+
+---
+
+Built with ❤️ by the GenHart team

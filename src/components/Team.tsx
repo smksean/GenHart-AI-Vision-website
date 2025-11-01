@@ -17,9 +17,9 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-24">
+    <section id="team" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center space-y-6 mb-16 animate-fade-in">
+        <div className="text-center space-y-4 mb-14 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold">
             Our <span className="bg-gradient-hero bg-clip-text text-transparent">Team</span>
           </h2>
