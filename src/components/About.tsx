@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Brain, Code, GraduationCap } from "lucide-react";
+import { Brain, Code, GraduationCap, Zap, Globe, Users } from "lucide-react";
 import aboutImage from "@/assets/annie-spratt-sggw4-qDD54-unsplash.jpg";
 
 const About = () => {
@@ -32,23 +32,67 @@ const About = () => {
         {/* Two Column Layout */}
         <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
           {/* Left Column - Text Content */}
-          <div className="space-y-6 animate-slide-in-left">
+          <div className="space-y-7 animate-slide-in-left">
+            {/* Top badges */}
+            <div className="flex flex-wrap gap-3">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full group hover:bg-primary/20 transition-all duration-300 cursor-default">
+                <Globe className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-semibold text-primary">Global Reach</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full group hover:bg-primary/20 transition-all duration-300 cursor-default">
+                <Zap className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-semibold text-primary">AI-Powered</span>
+              </div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full group hover:bg-primary/20 transition-all duration-300 cursor-default">
+                <Users className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+                <span className="text-sm font-semibold text-primary">Talent-Focused</span>
+              </div>
+            </div>
+
             <div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold mb-3">
-                About <span className="text-primary">GenHart</span>
+              <h2 className="font-display text-4xl md:text-5xl font-bold mb-3 leading-tight">
+                About <span className="text-primary relative inline-block">
+                  GenHart
+                  <span className="absolute -bottom-1 left-0 w-full h-3 bg-primary/10 -z-10"></span>
+                </span>
               </h2>
               {/* Accent line under heading */}
-              <div className="w-20 h-1 bg-gradient-to-r from-primary to-primary/30 rounded-full"></div>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-primary via-primary/70 to-primary/30 rounded-full animate-pulse-slow"></div>
             </div>
             
-            <p className="text-lg text-foreground/80 leading-relaxed max-w-xl">
-              <strong className="text-foreground font-semibold">GenHart</strong> is a global <strong className="text-foreground font-semibold">AI technology company</strong> focused on delivering scalable, data-driven solutions that create real impact for businesses and individuals. We operate through two core divisions: GenHart HQ, which drives product innovation and consulting, and GenHart EdTech, dedicated to AI education and talent development.
-            </p>
+            {/* Main description with better formatting */}
+            <div className="space-y-4 max-w-xl">
+              <p className="text-lg text-foreground leading-relaxed">
+                <span className="text-xl font-bold text-primary">GenHart</span> is a global <span className="font-semibold text-foreground bg-primary/5 px-2 py-1 rounded">AI technology company</span> focused on delivering scalable, data-driven solutions that create <span className="font-semibold text-primary">real impact</span> for businesses and individuals.
+              </p>
+              
+              <div className="flex gap-3 items-start p-4 bg-gradient-to-r from-primary/5 to-transparent rounded-lg border-l-2 border-primary">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <div className="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                </div>
+                <p className="text-base text-foreground/90 leading-relaxed">
+                  We operate through <strong className="text-foreground">two core divisions:</strong> <span className="font-semibold text-primary">GenHart HQ</span>, which drives product innovation and consulting, and <span className="font-semibold text-primary">GenHart EdTech</span>, dedicated to AI education and talent development.
+                </p>
+              </div>
+            </div>
             
-            {/* Mission Statement - Distinguished */}
-            <p className="text-lg leading-relaxed max-w-xl bg-primary/5 border-l-4 border-primary pl-6 pr-4 py-4 rounded-r-md text-foreground/90">
-              <strong className="text-foreground">Our mission</strong> is to advance the adoption of artificial intelligence by developing cutting-edge products, providing strategic consulting, and equipping people with the skills needed to thrive in an AI-powered world.
-            </p>
+            {/* Mission Statement - More Dynamic */}
+            <div className="relative max-w-xl group">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-primary/5 rounded-lg blur-sm group-hover:blur-md transition-all duration-300"></div>
+              <div className="relative bg-white/80 backdrop-blur-sm border-l-4 border-primary pl-6 pr-5 py-5 rounded-r-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
+                    <Zap className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold uppercase tracking-wider text-primary/60 mb-1">Our Mission</div>
+                    <p className="text-base leading-relaxed text-foreground/90">
+                      To advance the adoption of artificial intelligence by developing <strong className="text-foreground">cutting-edge products</strong>, providing <strong className="text-foreground">strategic consulting</strong>, and equipping people with the <strong className="text-foreground">skills needed to thrive</strong> in an AI-powered world.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Image with AI Overlay */}

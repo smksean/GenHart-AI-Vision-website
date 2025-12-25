@@ -72,8 +72,8 @@ const Hero = () => {
               </Button>
             </div>
           </div>
-        </div>
-      </div>
+            </div>
+          </div>
 
       {/* Metrics Bar */}
       <div className="container mx-auto px-6 lg:px-20 xl:px-32 relative z-10">
